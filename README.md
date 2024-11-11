@@ -57,3 +57,9 @@ git push -u origin H0712310-- # Sesuaikan dengan NIM masing-masing
 
 11. **Buka Pull Request (PR)**: Di halaman repositori di akunmu, akan ada pemberitahuan untuk melakukan Pull Request. Klik tautan tersebut dan isi informasi yang diperlukan. Tim kami akan meninjau perubahanmu.
 
+## Tips Tambahan
+
+Pastikan untuk memberi nama yang deskriptif pada cabang dan commit kamu.
+Selalu sinkronkan kode kamu dengan cabang utama sebelum membuat PR baru.
+Gunakan pesan commit yang jelas agar mudah dimengerti oleh rekan timmu.
+Terima kasih atas kontribusimu dalam LAB-AP-10-2023!

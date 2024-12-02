@@ -1,0 +1,31 @@
+import re
+
+def ipv4(alamat):
+    pola_ipv4 = r'^([0-9]{1,3}\.){3}[0-9]{1,3}$'
+    if re.match(pola_ipv4, alamat):
+        bagian = alamat.split('.')
+        for b in bagian:
+            if not (0 <= int(b) <= 255):
+                return False
+        return True
+    return False
+
+def ipv6(alamat):
+    pola_ipv6 = r'^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$'
+    return bool(re.match(pola_ipv6, alamat))
+
+def main():
+    n = int(input().strip())
+    
+    alamat_list = [input().strip() for _ in range(n)]
+    
+    for alamat in alamat_list:
+        if ipv4(alamat):
+            print("IPv4")
+        elif ipv6(alamat):
+            print("IPv6")
+        else:
+            print("Bukan IP Address")
+
+if __name__ == "__main__":
+    main()
